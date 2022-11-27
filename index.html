@@ -349,53 +349,53 @@
         <!--Бекдроп-->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="btn-close-back" type="button" data-modal-close>
-                    <svg class="close-back" width="18" height="18">
+                <button class="btn-close" type="button" data-modal-close>
+                    <svg class="btn-close__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-close-black"></use>
                     </svg>
                 </button>
-                <h2 class="form-titel">Залиште свої дані, ми вам передзвонимо</h2>
-                <form class="form" action="javascript:void(0);">
-                    <ul class=" form-list list">
-                        <li class="form-field">
-                            <label for="name" class="form-label">Ім'я</label>
-                            <input type="name" name="Username" class="form-input" id="name" />
-                            <div class="form-field-element">
-                                <svg class="form-field-icon" width="18" height="18">
+                <h2 class="modal__titel">Залиште свої дані, ми вам передзвонимо</h2>
+                <form class="modal__form" action="javascript:void(0);">
+                    <ul class="modal__list list">
+                        <li class="modal__item">
+                            <label for="name" class="modal__label">Ім'я</label>
+                            <input type="name" name="Username" class="modal__input" id="name" />
+                            <div class="modal__element">
+                                <svg class="modal__icon" width="18" height="18">
                                     <use href="./images/icons.svg#icon-person-black"></use>
                                 </svg>
                                 </div>
                         </li>
-                        <li class="form-field">
-                            <label for="tel" class="form-label">Телефон</label>
-                            <input type="tel" name="tel" class="form-input" id="tel" />
-                            <div class="form-field-element">
-                                <svg class="form-field-icon" width="18" height="18">
+                        <li class="modal__item">
+                            <label for="tel" class="modal__label">Телефон</label>
+                            <input type="tel" name="tel" class="modal__input"  id="tel" />
+                            <div class="modal__element">
+                                <svg class="modal__icon" width="18" height="18">
                                     <use href="./images/icons.svg#icon-phone-black"></use>
                                 </svg>
                             </div>
                        </li>
-                        <li class="form-field" class="form-label">
-                            <label for="email">Пошта</label>
-                            <input type="email" name="email" class="form-input" id="email" />
-                            <div class="form-field-element">
-                                <svg class="form-field-icon" width="18" height="18">
+                        <li class="modal__item" >
+                            <label for="email" class="modal__label">Пошта</label>
+                            <input type="email" name="email" class="modal__input" id="email" />
+                            <div class="modal__element">
+                                <svg class="modal__icon" width="18" height="18">
                                     <use href="./images/icons.svg#icon-email-black"></use>
                                 </svg>
                             </div>
                         </li>
-                        <li class="form-field">
-                            <label for="comment">Коментар</label>
-                            <textarea name="comment" class="form-input"id="comment" rows="10" placeholder="Введіть текст"></textarea>
+                        <li class="modal__item">
+                            <label for="comment" class="modal__label">Коментар</label>
+                            <textarea name="comment" class="modal__textarea" id="comment" rows="10" placeholder="Введіть текст"></textarea>
                         </li>
                     </ul>
-                    <div class="form-checkbox">
-                    <label class="form-check">
-                        <input type="checkbox" class="checkbox" name="approval" value="approval"/>
-                        <span class="form-check-icon">
+                    <div class="modal__checkbox">
+                    <label class="modal__check">
+                        <input type="checkbox" class="modal__box" name="approval" value="approval"/>
+                        <span class="modal__check-icon">
                         </span>
-                        <p class="checkbox-text">Погоджуюся з розсилкою та приймаю</p>
-                        <a href="" class="form-link">Умови договору</a>
+                        <p class="modal__checkbox-text">Погоджуюся з розсилкою та приймаю</p>
+                        <a href="" class="modal__link">Умови договору</a>
                     </label>
                     </div>
                     <button class="btn-submit" type="submit">Відправити</button>
@@ -406,64 +406,64 @@
     <!--Footer-->
     <footer class="end-page">
         <div class="container">
-            <div class="info-foot">
-                <div class="left-side">
+            <div class="end-page__info">
+                <div class="end-page--left-side">
             <a href="./index.html" class="logo">
-                <span class="logo--accent">Web</span><span class="color-footer">Studio</span>
+                <span class="logo--accent">Web</span><span class="logo--color">Studio</span>
             </a>
             <address>
-                <ul class="list">
+                <ul class="end-page__list list">
                     <li>
-                        <p class="post-office">м. Київ, пр-т Лесі Українки, 26</p>
+                        <p class="end-page__post-office">м. Київ, пр-т Лесі Українки, 26</p>
                     </li>
-                    <li class="list-email">
-                        <a href="mailto:info@devstudio.com" class="email">info@devstudio.com</a>
+                    <li class="end-page__email">
+                        <a href="mailto:info@devstudio.com" class="end-page__item">info@devstudio.com</a>
                     </li>
                     <li>
-                        <a href="tel:+380961111111" class="number">+38 096 111 11 11</a>
+                        <a href="tel:+380961111111" class="end-page__item">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </address>
             </div>
-            <div class="socials">
-                <p class="social-links">Приєднуйтесь</p>
-                <ul class="action-list list" >
-                    <li class="action-item">
-                        <a href="" rel="noopener noreferrer nofollow" class="social-link">
-                            <svg class="action-insta" width="20" height="20">
+            <div class="join-up">
+                <p class="join-up__title">Приєднуйтесь</p>
+                <ul class="join-up__list list" >
+                    <li class="join-up__item">
+                        <a href="" rel="noopener noreferrer nofollow" class="join-up__link">
+                            <svg class="join-up__icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="action-item">
-                        <a href="" rel="noopener noreferrer nofollow" class="social-link">
-                        <svg class="action-twit" width="20" height="20">
+                    <li class="join-up__item">
+                        <a href="" rel="noopener noreferrer nofollow" class="join-up__link">
+                        <svg class="join-up__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-twitter"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="action-item">
-                        <a href="" rel="noopener noreferrer nofollow" class="social-link">
-                        <svg class="action-face" width="20" height="20">
+                    <li class="join-up__item">
+                        <a href="" rel="noopener noreferrer nofollow" class="join-up__link">
+                        <svg class="join-up__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-facebook"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="action-item"> 
-                     <a href="" rel="noopener noreferrer nofollow" class="social-link">
-                        <svg class="action-link" width="20" height="20">
+                    <li class="join-up__item"> 
+                     <a href="" rel="noopener noreferrer nofollow" class="join-up__link">
+                        <svg class="join-up__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                     </a>
                     </li>
                 </ul>
             </div>
-            <form class="form-footer">
-                <p class="form-footer-name">Підпишіться на розсилку</p>
+            <form class="sign-up">
+                <p class="sign-up__name">Підпишіться на розсилку</p>
                 <div class="subscribe">
-                <input type="email" name="mail" placeholder="E-mail"/>
-                <button type="submit" class="form-btn-footer">Підписатися 
-                    <svg class="icon-send" width="24" height="24">
+                <input type="email" name="mail" class="subscribe__window" placeholder="E-mail"/>
+                <button type="submit" class="subscribe__btn">Підписатися 
+                    <svg class="subscribe__icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-icon-send"></use>
                     </svg>
                 </button>
@@ -471,7 +471,6 @@
             </form>
             </div>
         </div>
-       
     </footer>
     <script src="./js/modal.js"></script>
 </body>
