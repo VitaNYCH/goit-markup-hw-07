@@ -1,0 +1,32 @@
+// .button {
+   
+
+// }
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: var(--primary-white-color);
+    background-color: var(--bcground-accent-color);
+    box-shadow: 0px 2px 2px 0px #0000001F;
+    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001A;
+}
+
+.button__primary {
+    @extend %button;
+    min-width: 216px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+
+    color: $primary-white-color;
+    background-color: $bcground-accent-color;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}

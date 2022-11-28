@@ -1,0 +1,11 @@
+.page {
+    color: $primary-text-color;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-header {
+    @extend %container;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
+}
+
