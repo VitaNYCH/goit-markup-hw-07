@@ -1,4 +1,4 @@
-.end-page__list, .menu__list, .social, .contact, .site-nav {
+.end-page__list, .portfolio__list, .social, .contact, .site-nav {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -10,6 +10,10 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.content-list__image {
+  display: block;
 }
 
 .button__primary, .btn-secondary {
@@ -289,7 +293,7 @@
   padding-bottom: 94px;
 }
 
-.menu--visually-hidden {
+.portfolio__menu--visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -300,17 +304,17 @@
   overflow: hidden;
 }
 
-.menu__list {
-  margin-bottom: 50px;
+.portfolio__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 50px;
 }
 
-.menu__item:not(:last-child) {
+.portfolio__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -328,13 +332,13 @@
 .content-list__title {
   margin-top: 0;
   margin-bottom: 4px;
-  color: #212121;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: #212121;
 }
 
 .content-list__meta {

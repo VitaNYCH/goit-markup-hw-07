@@ -10,13 +10,14 @@
     margin-top: 0;
     margin-bottom: 4px;
 
-    color: $primary-text-color;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    color: $primary-text-color;
 }
 
 .content-list__meta {
@@ -24,7 +25,9 @@
     border: 1px solid #EEEEEE;
 
 }
-
+.content-list__image{
+    @extend %img;
+}
 .content-list__text {
     color: $secondary-text-color;
     font-family: 'Roboto';

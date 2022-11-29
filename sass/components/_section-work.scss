@@ -1,6 +1,6 @@
 .section-work {
     @extend %container;
-    padding-top: 0;
+    padding: 0;
     padding-bottom: 94px;
 }
 
@@ -16,6 +16,8 @@
 .section-work__list {
     @extend %list;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-work__example {
@@ -27,9 +29,14 @@
 }
 }   
 .section-work__thumb {
+    padding: 0;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
-
+.section-work__image{
+  @include centeredFlex(flex, baseline);
+}
 .section-work__item {
     @include centeredFlex();
     position: absolute;
@@ -46,7 +53,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
 
     color: $bcg-white-color;
     background: rgba(47, 48, 58, 0.8);

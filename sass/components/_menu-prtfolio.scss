@@ -3,7 +3,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.menu--visually-hidden {
+.portfolio__menu--visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -13,13 +13,14 @@
     white-space: nowrap;
     overflow: hidden;
 }
-.menu__list {
+.portfolio__list {
     @extend %list;
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
+
+    margin-bottom: 50px;
 }
 
-.menu__item:not(:last-child) {
+.portfolio__item:not(:last-child) {
     margin-right: 8px;
 }
