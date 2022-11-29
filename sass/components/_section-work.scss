@@ -15,8 +15,7 @@
 
 .section-work__list {
     @extend %list;
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
     justify-content: center;
 }
 

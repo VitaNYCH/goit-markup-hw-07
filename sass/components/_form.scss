@@ -1,7 +1,6 @@
 .form {
-    display: flex;
+    @include centeredFlex();
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 .form__list {
@@ -43,15 +42,24 @@
     margin-right: 7px;
     border: 2px solid rgba(33, 33, 33, 1);
     border-radius: 4px;
-}
 
-.form__box:checked+.form__check-icon {
+    .form__box:checked+& {
+        border-color: $bcground-accent-color;
+        background-color: $bcground-accent-color;
+        background-image: url("../images/check.svg");
+        background-size: contain;
+        background-origin: border-box;
+    }
+
+}
+.form__box:checked +.form__check-icon {
     border-color: $bcground-accent-color;
     background-color: $bcground-accent-color;
     background-image: url("../images/check.svg");
     background-size: contain;
     background-origin: border-box;
 }
+
 
 .form__check {
     @include centeredFlex();
@@ -89,9 +97,6 @@
     cursor: pointer;
 }
 
-.form__check-icon+.form__element {
-    color: $accent-color;
-}
 
 .form__element {
     position: absolute;
@@ -102,10 +107,14 @@
     width: 18px;
     height: 18px;
     color: $primary-text-color;
+    .form__check-icon+& {
+            color: $accent-color;
+        }
+    .form__input:focus+& {
+             color: $accent-color ;
+         }
 }
-.form__input:focus +.form__element{
-    color: $accent-color ;
-}
+
 
 .form__textarea {
     width: 448px;

@@ -61,6 +61,15 @@
   color: #2196F3;
 }
 
+.logo__text--color {
+  color: #FFFFFF;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo__text--color:hover, .logo__text--color:focus {
+  color: #2196F3;
+}
+
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,9 +157,7 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #757575;
 }
-
-.contact__link:hover,
-.contact__link:focus {
+.contact__link:hover, .contact__link:focus {
   color: #2196F3;
   cursor: pointer;
 }
@@ -604,11 +611,6 @@
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.9);
-          transform: translate(-50%, -50%) scale(0.9);
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -642,13 +644,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -694,6 +696,13 @@
   margin-right: 7px;
   border: 2px solid rgb(33, 33, 33);
   border-radius: 4px;
+}
+.form__box:checked + .form__check-icon {
+  border-color: #2196F3;
+  background-color: #2196F3;
+  background-image: url("../images/check.svg");
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .form__box:checked + .form__check-icon {
@@ -741,10 +750,6 @@
   cursor: pointer;
 }
 
-.form__check-icon + .form__element {
-  color: #2196F3;
-}
-
 .form__element {
   position: absolute;
   top: 75%;
@@ -755,7 +760,9 @@
   height: 18px;
   color: #212121;
 }
-
+.form__check-icon + .form__element {
+  color: #2196F3;
+}
 .form__input:focus + .form__element {
   color: #2196F3;
 }
@@ -808,15 +815,6 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-}
-
-.logo__text--color {
-  color: #FFFFFF;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.logo__text--color:hover, .logo__text--color:focus {
-  color: #2196F3;
 }
 
 .end-page__email {
