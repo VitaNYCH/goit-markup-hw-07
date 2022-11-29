@@ -1,7 +1,6 @@
 .section-features {
     @extend %container;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include padding();
 }
 
 .section-features__title--visually-hidden {
@@ -35,11 +34,9 @@
 .section-features__item {
     width: 270px;
     margin-right: 30px;
-
-}
-
-.section-features__item:nth-child(4) {
-    margin-right: 0;
+    &:nth-child(4) {
+        margin-right: 0;
+    }
 }
 
 .section-features__icon {

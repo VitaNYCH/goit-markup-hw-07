@@ -1,7 +1,7 @@
 .section-team {
     @extend %container;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include padding();
+    
     background-color: $bcground-secondary-white-color;
 }
 
@@ -22,11 +22,12 @@
 .section-team__name {
     margin-top: 0;
     margin-bottom: 10px;
-
-    color: $primary-text-color;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+
+    color: $primary-text-color;
 }
 
 .section-team__member {

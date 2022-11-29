@@ -51,13 +51,11 @@
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.logo__text--accent {
+.logo:hover, .logo:focus {
   color: #2196F3;
 }
 
-.logo:hover,
-.logo:focus {
+.logo__text--accent {
   color: #2196F3;
 }
 
@@ -86,18 +84,6 @@
           align-items: center;
 }
 
-.site-nav__link--current::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 4px;
-  background: #2196F3;
-  border-radius: 2px;
-}
-
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -115,6 +101,9 @@
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #2196F3;
+}
 
 .site-nav__link--current {
   position: relative;
@@ -124,10 +113,16 @@
   letter-spacing: 0.02em;
   color: #2196F3;
 }
-
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: #2196F3;
+.site-nav__link--current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
 }
 
 .contact {
@@ -315,7 +310,6 @@
   width: 270px;
   margin-right: 30px;
 }
-
 .section-features__item:nth-child(4) {
   margin-right: 0;
 }
@@ -450,10 +444,10 @@
 .section-team__name {
   margin-top: 0;
   margin-bottom: 10px;
-  color: #212121;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  color: #212121;
 }
 
 .section-team__member {
@@ -491,13 +485,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
 }
 
 .social__link {
@@ -581,13 +575,12 @@
   margin-right: 0;
 }
 
+.section-clients__link {
+  color: #AFB1B8;
+}
 .section-clients__company:hover .section-clients__link {
   color: #2196F3;
   cursor: pointer;
-}
-
-.section-clients__link {
-  color: #AFB1B8;
 }
 
 .section-clients__icon {

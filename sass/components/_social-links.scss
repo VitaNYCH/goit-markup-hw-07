@@ -1,9 +1,8 @@
 .social {
     @extend %list;
-    display: flex;
-    gap: 10px;
+    @include centeredFlex();
     justify-content: center;
-    align-items: center;
+    gap: 10px;
 }
 
 .social__link {

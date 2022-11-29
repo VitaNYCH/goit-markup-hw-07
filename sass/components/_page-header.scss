@@ -5,7 +5,7 @@
 
 .page-header {
     @extend %container;
-    background-color: #FFFFFF;
+    background-color: $bcg-white-color;
     border-bottom: 1px solid #ECECEC;
 }
 

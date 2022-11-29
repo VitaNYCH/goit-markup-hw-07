@@ -1,7 +1,6 @@
 .section-clients {
     @extend %container;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include padding();
 }
 
 .section-clients__title {
@@ -42,12 +41,13 @@
     margin-right: 0;
 }
 }
-.section-clients__company:hover .section-clients__link{
-   color: $accent-color;
-    cursor: pointer;
-}
+
 .section-clients__link {
     color: #AFB1B8;
+    .section-clients__company:hover & {
+            color: $accent-color;
+            cursor: pointer;
+        }
 }   
 .section-clients__icon {
     fill: currentColor;

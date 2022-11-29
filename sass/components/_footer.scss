@@ -1,6 +1,5 @@
 .end-page {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @include padding(60px, 60px);
     background-color: #2F303A;
 }
 .end-page__list{

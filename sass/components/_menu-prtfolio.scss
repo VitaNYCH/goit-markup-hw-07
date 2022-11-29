@@ -1,7 +1,6 @@
 .section {
    @extend %container;
-    padding-top: 94px;
-    padding-bottom: 94px;
+   @include padding();
 }
 .portfolio__menu--visually-hidden {
     position: absolute;
