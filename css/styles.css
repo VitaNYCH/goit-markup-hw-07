@@ -690,10 +690,10 @@ color: var(--accent-color);
 .end-page__item:focus{
    color: var(--accent-color); 
 }
-.join-up{
+.end-page__join{
     margin-left: 70px;
 }
-.join-up__title{
+.end-page__title{
     margin: 0;
     margin-bottom: 20px;
     font-weight: 700;
