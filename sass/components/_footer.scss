@@ -6,7 +6,6 @@
     @extend %list;
 }
 .end-page__info {
-    @extend %container;
     display: flex;
     align-items: baseline;
 }

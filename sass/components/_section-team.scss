@@ -1,7 +1,5 @@
 .section-team {
-    @extend %container;
     @include padding();
-    
     background-color: $bcground-secondary-white-color;
 }
 

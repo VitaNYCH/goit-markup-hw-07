@@ -4,10 +4,6 @@
     @include padding(200px, 200px);
     margin: 0 auto;
 }
-.hero__container{
-    @extend %container;
-}
-
 /* overlay */
 .hero--overlay {
     max-width: 1600px;

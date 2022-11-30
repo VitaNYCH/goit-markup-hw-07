@@ -1,5 +1,4 @@
 .section {
-   @extend %container;
    @include padding();
 }
 .portfolio__menu--visually-hidden {
